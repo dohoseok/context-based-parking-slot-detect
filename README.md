@@ -1,1 +1,20 @@
 # context-based-parking-slot-detect
+
+# Train Dataset
+[link]
+
+# Test Method
+
+1. Download dataset
+ - [link](https://drive.google.com/file/d/1z94Oqcy0Dich1GgiMkyPY5-wltsL8_hq/view?usp=sharing)
+ - Unzip to $your_test_path
+ 
+2. Download weight
+ - [link](https://drive.google.com/file/d/1A6mdic0Rd8HgixM5CvJmW9VvRv1v8Ils/view?usp=sharing)
+ - Unzip under main path (locate "weight_pcr" and "weight_psd" under "context-based detect" folder)
+ 
+3. Prepare Dataset
+ - python prepare_data.py --data_path $your_test_path
+
+4. Evaluate
+ - python --data_path $your_test_path
