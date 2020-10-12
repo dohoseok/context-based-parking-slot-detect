@@ -1,5 +1,10 @@
 # context-based-parking-slot-detect
 
+Tensorflow implementation of [Context-based parking slot detection](https://ieeexplore.ieee.org/abstract/document/9199853) (IEEE Access)
+
+This implementation is based on https://github.com/wizyoung/YOLOv3_TensorFlow
+
+
 # Train Dataset
 [link](https://drive.google.com/file/d/1i6I-71g1fNL7_Qh-Qs1oOKLclrP2qUmO/view?usp=sharing)
 
