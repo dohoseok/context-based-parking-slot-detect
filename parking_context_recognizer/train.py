@@ -85,6 +85,7 @@ def evaluate(test_path, weight_file):
     angle_predict = angle_predict * 180. - 90.
     angle_predict = list(itertools.chain.from_iterable(angle_predict))
 
+    os.makedirs('result', exist_ok=True)
     f_0 = open(os.path.join('result', 'result_pcr_type_0.txt'), 'wt')
     f_1 = open(os.path.join('result', 'result_pcr_type_1.txt'), 'wt')
     f_2 = open(os.path.join('result', 'result_pcr_type_2.txt'), 'wt')
