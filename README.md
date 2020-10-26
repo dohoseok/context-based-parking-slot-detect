@@ -27,10 +27,11 @@ This implementation is based on https://github.com/wizyoung/YOLOv3_TensorFlow
  
 2. python train.py --data_path=$your_data_path
 
-3. Weight files of parking context recognizer are saved to 'weight_pcr/YYYYMMDD_HHMM'
-   Weight files of parking slot detector fine-tuned for parallel parking slots are saved to 'weight_psd/type_0/YYYYMMDD_HHMM'
-   Weight files of parking slot detector fine-tuned for perpendicular parking slots are saved to 'weight_psd/type_1/YYYYMMDD_HHMM'
-   Weight files of parking slot detector fine-tuned for diagonal parking slots are saved to 'weight_psd/type_2/YYYYMMDD_HHMM'
+3. Trained Weight path
+- Weight files of parking context recognizer are saved to 'weight_pcr/YYYYMMDD_HHMM'
+- Weight files of parking slot detector fine-tuned for parallel parking slots are saved to 'weight_psd/type_0/YYYYMMDD_HHMM'
+- Weight files of parking slot detector fine-tuned for perpendicular parking slots are saved to 'weight_psd/type_1/YYYYMMDD_HHMM'
+- Weight files of parking slot detector fine-tuned for diagonal parking slots are saved to 'weight_psd/type_2/YYYYMMDD_HHMM'
 
 
 # Test Method (with downloaded weight files)
