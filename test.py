@@ -16,17 +16,14 @@ parser.add_argument("--data_path", type=str, default="E:/PIL-park/",
 parser.add_argument("--pcr_test_weight", type=str, default="weight_pcr/trained/trained.ckpt",
                     help="The path of the trained weights of pcr.")
 
-parser.add_argument("--psd_test_weight_type0", type=str, default="weight_psd/fine_tuned_type_0/trained_type_0",
+parser.add_argument("--psd_test_weight_type0", type=str, default="weight_psd/fine_tuned_type_0",
                     help="The path of the trained weights of fine-tuned to parallel type.")
 
-parser.add_argument("--psd_test_weight_type1", type=str, default="weight_psd/fine_tuned_type_1/trained_type_1",
+parser.add_argument("--psd_test_weight_type1", type=str, default="weight_psd/fine_tuned_type_1",
                     help="The path of the trained weights of fine-tuned to perpendicular type.")
 
-parser.add_argument("--psd_test_weight_type2", type=str, default="weight_psd/fine_tuned_type_2/trained_type_2",
+parser.add_argument("--psd_test_weight_type2", type=str, default="weight_psd/fine_tuned_type_2",
                     help="The path of the trained weights of fine-tuned to diagonal type.")
-
-# parser.add_argument("--psd_test_file", type=str, default="E:/parking_space/data_psd_04_1/test_gt.txt",
-#                     help="The path of the validation or test txt file.")
 
 parser.add_argument("--threshold_score", type=float, default=0.8,
                     help="Threshold of prediction which is determined TRUE")
