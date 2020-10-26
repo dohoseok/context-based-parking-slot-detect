@@ -28,10 +28,10 @@ def train(train_path, pre_weight = None):
         return lr
 
     lr_scheduler = tf.keras.callbacks.LearningRateScheduler(decay_schedule)
-
-    filenames_train = tf.data.Dataset.list_files(train_path + "*.tfrecord")
-
-    #Get your datatensors
+    
+    filenames_train = tf.data.Dataset.list_files(os.path.join(train_path, "tfrecord/") + "*.tfrecord")
+    
+	#Get your datatensors
     image, type, angle = create_dataset(filenames_train)
 
     model_input = tf.keras.layers.Input(tensor=image)

@@ -32,7 +32,6 @@ import os
 import random
 import sys
 import platform
-import win32file
 import tensorflow as tf
 
 from dataset import tf_dataset_utils
@@ -164,14 +163,29 @@ def _convert_dataset(split_name, filenames, dataset_dir, num_tfrecord):
   sys.stdout.flush()
 
 
+def get_size(start_path='.'):
+  total_size = 0
+  for dirpath, dirnames, filenames in os.walk(start_path):
+    for f in filenames:
+      fp = os.path.join(dirpath, f)
+      # skip if it is symbolic link
+      if not os.path.islink(fp):
+        total_size += os.path.getsize(fp)
+
+  return total_size
+
+
 def get_dir_size(path):
     total_size = 0
     if platform.system() == 'Windows':
+        import win32file
         if os.path.isdir(path):
             items = win32file.FindFilesW(path + '\\*')# Add the size or perform recursion on folders.
             for item in items:
                 size = item[5]
                 total_size += size
+    else:
+        total_size = get_size(path)
     return total_size
 
 

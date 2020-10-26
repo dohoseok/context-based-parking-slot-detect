@@ -156,7 +156,7 @@ def parse_data(line, class_num, img_size, anchors):
     return img_idx, img, y_true_13, y_true_26, y_true_52, angle
 
 
-def get_batch_data(batch_line, class_num, img_size, anchors):
+def get_batch_data(batch_line, class_num, img_size, anchors, mix_up = False):
     img_idx_batch, img_batch, y_true_13_batch, y_true_26_batch, y_true_52_batch, img_angle_batch = [], [], [], [], [], []
 
     for line in batch_line:
