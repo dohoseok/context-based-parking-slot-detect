@@ -29,7 +29,7 @@ def train(train_path, pre_weight = None):
 
     lr_scheduler = tf.keras.callbacks.LearningRateScheduler(decay_schedule)
     
-    filenames_train = tf.data.Dataset.list_files(os.path.join(train_path, "tfrecord/") + "*.tfrecord")
+    filenames_train = tf.data.Dataset.list_files(os.path.join(train_path, "train/tfrecord/") + "*.tfrecord")
     
 	#Get your datatensors
     image, type, angle = create_dataset(filenames_train)
