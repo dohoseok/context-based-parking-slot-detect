@@ -81,10 +81,11 @@ def evaluate(weight_path, eval_file, result_file):
     y_pred = yolo_model.predict(pred_feature_maps, image_angle)
     
     saver_to_restore = tf.train.Saver()
+    weight_file = tf.train.latest_checkpoint(weight_path)
     
     with tf.Session() as sess:
         sess.run([tf.global_variables_initializer()])
-        saver_to_restore.restore(sess, weight_path)
+        saver_to_restore.restore(sess, weight_file)
         today = time.localtime()
         time_part = '{:02d}{:02d}{:02d}_{:02d}{:02d}'.format(today.tm_year, today.tm_mon, today.tm_mday, today.tm_hour,
                                                              today.tm_min)
