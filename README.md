@@ -45,5 +45,5 @@ This implementation is based on https://github.com/wizyoung/YOLOv3_TensorFlow
 
 # Test Method (with your trained weight files)
 1. Evaluate
- - python test.py --data_path=$your_test_path --pcr_test_weight='weight_pcr/YYYYMMDD_HHMM' --psd_test_weight_type0='weight_psd/type_0/YYYYMMDD_HHMM' --psd_test_weight_type1='weight_psd/type_1/YYYYMMDD_HHMM' --psd_test_weight_type2='weight_psd/type_2/YYYYMMDD_HHMM'
+ - python test.py --data_path=$your_test_path --pcr_test_weight='weight_pcr/YYYYMMDD_HHMM/cp-0050.ckpt' --psd_test_weight_type0='weight_psd/type_0/YYYYMMDD_HHMM' --psd_test_weight_type1='weight_psd/type_1/YYYYMMDD_HHMM' --psd_test_weight_type2='weight_psd/type_2/YYYYMMDD_HHMM'
  
