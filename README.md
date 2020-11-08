@@ -22,7 +22,7 @@ This implementation is based on https://github.com/wizyoung/YOLOv3_TensorFlow
 
 # Train Dataset
 1. Download pretrain weight (Updated 2020.10.26)
- - [link](https://drive.google.com/file/d/1g3PXkTn8-pmIotjJqX_aR1ZPJNrrmWKG/view?usp=sharing)
+ - [link](https://drive.google.com/drive/folders/1mXbNgNxyXPi7JNsnBaxEv1-nWr7SVoQt)
  - Save to 'pre_weight' folder under "context-based detect" folder
  
 2. python train.py --data_path=$your_data_path
@@ -36,7 +36,7 @@ This implementation is based on https://github.com/wizyoung/YOLOv3_TensorFlow
 
 # Test Method (with downloaded weight files)
 1. Download trained weight
- - [link](https://drive.google.com/file/d/1A6mdic0Rd8HgixM5CvJmW9VvRv1v8Ils/view?usp=sharing)
+ - [link](https://drive.google.com/file/d/1g3PXkTn8-pmIotjJqX_aR1ZPJNrrmWKG/view?usp=sharing)
  - Unzip under main path (locate "weight_pcr" and "weight_psd" under "context-based detect" folder)
  
 2. Evaluate
