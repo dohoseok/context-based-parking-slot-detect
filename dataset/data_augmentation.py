@@ -75,6 +75,7 @@ def run(data_path):
     for jpg_file, txt_file in zip(jpg_files, txt_files):
         src_image_file = os.path.join(image_path, jpg_file)
         src_label_file = os.path.join(label_path, txt_file)
+        print(jpg_file)
         for angle in range(-5, 6):
             for flip in [True, False]:
                 if angle == 0 and flip == False:
