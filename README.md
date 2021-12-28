@@ -49,6 +49,10 @@ This implementation is based on https://github.com/wizyoung/YOLOv3_TensorFlow
  
  
  
+# Converted dataset of ps2.0
+- Converted version of the [ps2.0](https://cslinzhang.github.io/deepps/) dataset to fit our format.
+- [link](https://drive.google.com/file/d/1vM_u_YNFTdv7eHhwn4ExXE98_7BpSa3X/view?usp=sharing)
+ 
  
  # Citation
 If you use this code for your research, please cite the following work:
